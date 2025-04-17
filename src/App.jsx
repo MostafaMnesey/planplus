@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
 import './App.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom'
 import Login from './Components/Login/Login'
-const router =createBrowserRouter([ {
+const router =createHashRouter([ {
   path:'/'
   ,element:<Login/>
 },])
